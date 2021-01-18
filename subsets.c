@@ -13,29 +13,6 @@ void print_int_arr(int *arr, int arr_size){
 	printf("\n");
 }
 
-// long ipow(int base, int exponent){
-// 	long result=1;
-// 	for(int i=exponent; i>0; i--){
-// 		result *= base;
-// 	} // 	return result;
-// }
-
-				// int *ret[4];
-				// int nums1[2] = {1,2};
-				// int nums4[3];
-				// nums4[0] = 0;
-				// nums4[1] = 4;
-				// nums4[2] = 4;
-				// ret[0] = nums1;
-				// ret[1] = nums4;
-				// ret[2] = nums1;
-				// ret[3] = nums4;
-				// int i;
-				// for(i=0; i<4; i++) {
-				// 	printf("%d\n", ret[i][1]);
-				// }
-
-
 int combinations_size(int n, int k){
 	int k_larger;
 	int k_smaller;
@@ -58,8 +35,6 @@ int combinations_size(int n, int k){
 int **combos(int *nums, int num_size, int k, int *ret_size){
 	*ret_size = combinations_size(num_size, k);
 	int **ret = (int **) malloc(sizeof(int *) * (*ret_size));
-	// printf("Expected return size for n=%d and k=%d: %d\n", 
-	// num_size, k, combinations_size(num_size, k));
 
 	// k represents the # of value we will pick from nums
 	if ((k == 0) || (k > num_size)) {
