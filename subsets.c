@@ -130,8 +130,6 @@ int main(){
 		nums[i] = i;
 	}
 
-	int note;
-	note = 1<<10;
 	int **ret = subsets(nums, num_size, &return_size, &return_subset_size);
 
 	// printf("return (subset) size gave: %d\n", return_size);
